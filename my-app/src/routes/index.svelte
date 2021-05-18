@@ -1,8 +1,6 @@
 <script context="module">
 	export const prerender = true;
-	import Tailwindcss from './tailwindcss.svelte'
 </script>
-<Tailwindcss/>
 
 <script>
 	import Counter from '$lib/Counter/index.svelte';
