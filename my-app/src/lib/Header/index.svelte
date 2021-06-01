@@ -14,11 +14,11 @@
 	  </a>
 	  <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
 		<a sveltekit:prefetch href="/" class="font-sans mr-5 hover:text-gray-900">Homepage</a>
-		<a sveltekit:prefetch href="/about" class="font-sans mr-5 hover:text-gray-900">About</a>
+		<a sveltekit:prefetch href="/donation" class="font-sans mr-5 hover:text-gray-900">Donations</a>
 		<a sveltekit:prefetch href="/todos" class="font-sans mr-5 hover:text-gray-900">Todos</a>
-		<a class="mr-5 hover:text-gray-900 font-sans">Marche pas encore lol</a>
+		<a sveltekit:prefetch href="/team" class="mr-5 hover:text-gray-900 font-sans">Team</a>
 	  </nav>
-	  <button class="font-sans inline-flex items-center bg-gray-100 border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0">Contact</button>
+	  <button sveltekit:prefetch href="/contact" class="font-sans inline-flex items-center bg-gray-100 border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0">Contact</button>
 </div>
 </header>
 
