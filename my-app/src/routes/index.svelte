@@ -14,7 +14,8 @@
 	<h1>
 		<div class="welcome">
 			<picture>
-				<img src="https://i.imgur.com/ugjoMVJ.png" alt="Les Méduses" />
+				<img class= "object-left-top" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses" />
+        <img class= "object-right-top" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses" />
 			</picture>
 		</div>
 
@@ -22,11 +23,11 @@
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+		An ESSEC Initiative<strong>src/routes/index.svelte</strong>
 	</h2>
 
 </section>
-<section class="text-gray-600 body-font">
+<section class="text-indigo-600 font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
       <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Who we are</h1>
