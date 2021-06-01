@@ -1,50 +1,22 @@
-<script context="module">
-	import { browser, dev } from '$app/env';
-
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
-	export const hydrate = dev;
-
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
-	export const router = browser;
-
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
-	export const prerender = true;
-</script>
-
 <svelte:head>
-	<title>Useful datas</title>
+	<title>To make a donation</title>
 </svelte:head>
 
-<div class="content">
-	<h1>About this app</h1>
+ 
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
-	</p>
-</div>
-
-<style>
-	.content {
-		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
-	}
-</style>
+	<section class="text-gray-600 body-font">
+		<div class="container px-5 py-24 mx-auto flex flex-wrap">
+		  <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">This portal doesn't work for now as we are not available to take any donations for the moment, but thank you for thinking of us !</h2>
+		  <div class="md:w-3/5 md:pl-6">
+			<p class="leading-relaxed text-base">The association Les Méduses needs your donations
+				To allow us to create events and train the different members of ESSEC we need funds !</p>
+			<div class="flex md:mt-4 mt-6">
+			  <a href="https://www.facebook.com/collectiflesmeduses" class="text-indigo-500 inline-flex items-center ml-4">Learn More
+				<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+				  <path d="M5 12h14M12 5l7 7-7 7"></path>
+				</svg>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </section>
