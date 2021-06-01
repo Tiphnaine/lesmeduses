@@ -1461,7 +1461,7 @@ async function render_response({
   status,
   error: error3,
   branch,
-  page: page2
+  page
 }) {
   const css2 = new Set(options2.entry.css);
   const js = new Set(options2.entry.js);
@@ -1494,7 +1494,7 @@ async function render_response({
         navigating: writable(null),
         session
       },
-      page: page2,
+      page,
       components: branch.map(({node}) => node.module.default)
     };
     for (let i = 0; i < branch.length; i += 1) {
@@ -1536,7 +1536,7 @@ async function render_response({
 				session: ${try_serialize($session, (error4) => {
       throw new Error(`Failed to serialize session data: ${error4.message}`);
     })},
-				host: ${page2 && page2.host ? s$1(page2.host) : "location.host"},
+				host: ${page && page.host ? s$1(page.host) : "location.host"},
 				route: ${!!page_config.router},
 				spa: ${!page_config.ssr},
 				trailing_slash: ${s$1(options2.trailing_slash)},
@@ -1547,10 +1547,10 @@ async function render_response({
 						${branch.map(({node}) => `import(${s$1(node.entry)})`).join(",\n						")}
 					],
 					page: {
-						host: ${page2.host ? s$1(page2.host) : "location.host"}, // TODO this is redundant
-						path: ${s$1(page2.path)},
-						query: new URLSearchParams(${s$1(page2.query.toString())}),
-						params: ${s$1(page2.params)}
+						host: ${page.host ? s$1(page.host) : "location.host"}, // TODO this is redundant
+						path: ${s$1(page.path)},
+						query: new URLSearchParams(${s$1(page.query.toString())}),
+						params: ${s$1(page.params)}
 					}
 				}` : "null"}
 			});
@@ -1658,7 +1658,7 @@ async function load_node({
   options: options2,
   state,
   route,
-  page: page2,
+  page,
   node,
   $session,
   context,
@@ -1673,7 +1673,7 @@ async function load_node({
   let loaded;
   if (module2.load) {
     const load_input = {
-      page: page2,
+      page,
       get session() {
         uses_credentials = true;
         return $session;
@@ -1720,7 +1720,7 @@ async function load_node({
                 }
               });
             } else {
-              response = await fetch(`http://${page2.host}/${asset.file}`, opts);
+              response = await fetch(`http://${page.host}/${asset.file}`, opts);
             }
           }
           if (!response) {
@@ -1853,7 +1853,7 @@ function escape(str) {
 async function respond_with_error({request, options: options2, state, $session, status, error: error3}) {
   const default_layout = await options2.load_component(options2.manifest.layout);
   const default_error = await options2.load_component(options2.manifest.error);
-  const page2 = {
+  const page = {
     host: request.host,
     path: request.path,
     query: request.query,
@@ -1864,7 +1864,7 @@ async function respond_with_error({request, options: options2, state, $session, 
     options: options2,
     state,
     route: null,
-    page: page2,
+    page,
     node: default_layout,
     $session,
     context: {},
@@ -1878,7 +1878,7 @@ async function respond_with_error({request, options: options2, state, $session, 
       options: options2,
       state,
       route: null,
-      page: page2,
+      page,
       node: default_error,
       $session,
       context: loaded.context,
@@ -1900,7 +1900,7 @@ async function respond_with_error({request, options: options2, state, $session, 
       status,
       error: error3,
       branch,
-      page: page2
+      page
     });
   } catch (error4) {
     options2.handle_error(error4);
@@ -1914,7 +1914,7 @@ async function respond_with_error({request, options: options2, state, $session, 
 async function respond$1({request, options: options2, state, $session, route}) {
   const match = route.pattern.exec(request.path);
   const params = route.params(match);
-  const page2 = {
+  const page = {
     host: request.host,
     path: request.path,
     query: request.query,
@@ -1964,7 +1964,7 @@ async function respond$1({request, options: options2, state, $session, route}) {
               options: options2,
               state,
               route,
-              page: page2,
+              page,
               node,
               $session,
               context,
@@ -2005,7 +2005,7 @@ async function respond$1({request, options: options2, state, $session, route}) {
                     options: options2,
                     state,
                     route,
-                    page: page2,
+                    page,
                     node: error_node,
                     $session,
                     context: node_loaded.context,
@@ -2052,7 +2052,7 @@ async function respond$1({request, options: options2, state, $session, route}) {
       status,
       error: error3,
       branch: branch && branch.filter(Boolean),
-      page: page2
+      page
     });
   } catch (error4) {
     options2.handle_error(error4);
@@ -2422,9 +2422,6 @@ function afterUpdate(fn) {
 function setContext(key, context) {
   get_current_component().$$.context.set(key, context);
 }
-function getContext(key) {
-  return get_current_component().$$.context.get(key);
-}
 var resolved_promise = Promise.resolve();
 var seen_callbacks = new Set();
 var outroing = new Set();
@@ -2761,7 +2758,7 @@ var css$6 = {
 };
 var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let {stores} = $$props;
-  let {page: page2} = $$props;
+  let {page} = $$props;
   let {components} = $$props;
   let {props_0 = null} = $$props;
   let {props_1 = null} = $$props;
@@ -2783,8 +2780,8 @@ var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   });
   if ($$props.stores === void 0 && $$bindings.stores && stores !== void 0)
     $$bindings.stores(stores);
-  if ($$props.page === void 0 && $$bindings.page && page2 !== void 0)
-    $$bindings.page(page2);
+  if ($$props.page === void 0 && $$bindings.page && page !== void 0)
+    $$bindings.page(page);
   if ($$props.components === void 0 && $$bindings.components && components !== void 0)
     $$bindings.components(components);
   if ($$props.props_0 === void 0 && $$bindings.props_0 && props_0 !== void 0)
@@ -2795,7 +2792,7 @@ var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props_2(props_2);
   $$result.css.add(css$6);
   {
-    stores.page.set(page2);
+    stores.page.set(page);
   }
   return `
 
@@ -2838,9 +2835,9 @@ function init(settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-7164d7b5.js",
+      file: "/./_app/start-5768c353.js",
       css: ["/./_app/assets/start-230d6437.css"],
-      js: ["/./_app/start-7164d7b5.js", "/./_app/chunks/vendor-2f7c43bc.js"]
+      js: ["/./_app/start-5768c353.js", "/./_app/chunks/vendor-80f2df0c.js"]
     },
     fetched: void 0,
     floc: false,
@@ -2932,7 +2929,7 @@ var module_lookup = {
     return index;
   })
 };
-var metadata_lookup = {"src/routes/__layout.svelte": {"entry": "/./_app/pages/__layout.svelte-74627360.js", "css": ["/./_app/assets/pages/__layout.svelte-52d4f4fe.css"], "js": ["/./_app/pages/__layout.svelte-74627360.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null}, ".svelte-kit/build/components/error.svelte": {"entry": "/./_app/error.svelte-4c8de58c.js", "css": [], "js": ["/./_app/error.svelte-4c8de58c.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null}, "src/routes/index.svelte": {"entry": "/./_app/pages/index.svelte-ce224f34.js", "css": ["/./_app/assets/pages/index.svelte-ef393222.css"], "js": ["/./_app/pages/index.svelte-ce224f34.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null}, "src/routes/about.svelte": {"entry": "/./_app/pages/about.svelte-95cc1c78.js", "css": ["/./_app/assets/pages/about.svelte-7c88e487.css"], "js": ["/./_app/pages/about.svelte-95cc1c78.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null}, "src/routes/todos/index.svelte": {"entry": "/./_app/pages/todos/index.svelte-dc914097.js", "css": ["/./_app/assets/pages/todos/index.svelte-f4d9bf4b.css"], "js": ["/./_app/pages/todos/index.svelte-dc914097.js", "/./_app/chunks/vendor-2f7c43bc.js"], "styles": null}};
+var metadata_lookup = {"src/routes/__layout.svelte": {"entry": "/./_app/pages/__layout.svelte-bf3e9993.js", "css": ["/./_app/assets/pages/__layout.svelte-4c1482c9.css"], "js": ["/./_app/pages/__layout.svelte-bf3e9993.js", "/./_app/chunks/vendor-80f2df0c.js"], "styles": null}, ".svelte-kit/build/components/error.svelte": {"entry": "/./_app/error.svelte-e0ad234b.js", "css": [], "js": ["/./_app/error.svelte-e0ad234b.js", "/./_app/chunks/vendor-80f2df0c.js"], "styles": null}, "src/routes/index.svelte": {"entry": "/./_app/pages/index.svelte-fab1e872.js", "css": ["/./_app/assets/pages/index.svelte-ef393222.css"], "js": ["/./_app/pages/index.svelte-fab1e872.js", "/./_app/chunks/vendor-80f2df0c.js"], "styles": null}, "src/routes/about.svelte": {"entry": "/./_app/pages/about.svelte-a594551b.js", "css": ["/./_app/assets/pages/about.svelte-7c88e487.css"], "js": ["/./_app/pages/about.svelte-a594551b.js", "/./_app/chunks/vendor-80f2df0c.js"], "styles": null}, "src/routes/todos/index.svelte": {"entry": "/./_app/pages/todos/index.svelte-2a895188.js", "css": ["/./_app/assets/pages/todos/index.svelte-f4d9bf4b.css"], "js": ["/./_app/pages/todos/index.svelte-2a895188.js", "/./_app/chunks/vendor-80f2df0c.js"], "styles": null}};
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -3005,41 +3002,14 @@ var _uid__json = /* @__PURE__ */ Object.freeze({
   patch,
   del
 });
-var getStores = () => {
-  const stores = getContext("__svelte__");
-  return {
-    page: {
-      subscribe: stores.page.subscribe
-    },
-    navigating: {
-      subscribe: stores.navigating.subscribe
-    },
-    get preloading() {
-      console.error("stores.preloading is deprecated; use stores.navigating instead");
-      return {
-        subscribe: stores.navigating.subscribe
-      };
-    },
-    session: stores.session
-  };
-};
-var page = {
-  subscribe(fn) {
-    const store = getStores().page;
-    return store.subscribe(fn);
-  }
-};
-var logo = "/_app/assets/svelte-logo.87df40b8.svg";
 var css$5 = {
-  code: "header.svelte-u06xnb.svelte-u06xnb{display:flex;justify-content:space-between}.corner.svelte-u06xnb.svelte-u06xnb{width:3em;height:3em}.corner.svelte-u06xnb a.svelte-u06xnb{display:flex;align-items:center;justify-content:center;width:100%;height:100%}.corner.svelte-u06xnb img.svelte-u06xnb{width:2em;height:2em;-o-object-fit:contain;object-fit:contain}nav.svelte-u06xnb.svelte-u06xnb{display:flex;justify-content:center;--background:rgba(255, 255, 255, 0.7)}svg.svelte-u06xnb.svelte-u06xnb{width:2em;height:3em;display:block}path.svelte-u06xnb.svelte-u06xnb{fill:var(--background)}ul.svelte-u06xnb.svelte-u06xnb{position:relative;padding:0;margin:0;height:3em;display:flex;justify-content:center;align-items:center;list-style:none;background:var(--background);background-size:contain}li.svelte-u06xnb.svelte-u06xnb{position:relative;height:100%}li.active.svelte-u06xnb.svelte-u06xnb::before{--size:6px;content:'';width:0;height:0;position:absolute;top:0;left:calc(50% - var(--size));border:var(--size) solid transparent;border-top:var(--size) solid var(--accent-color)}nav.svelte-u06xnb a.svelte-u06xnb{display:flex;height:100%;align-items:center;padding:0 1em;color:var(--heading-color);font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:10%;text-decoration:none;transition:color 0.2s linear}a.svelte-u06xnb.svelte-u06xnb:hover{color:var(--accent-color)}",
-  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script>\\n\\timport { page } from '$app/stores';\\n\\timport logo from './svelte-logo.svg';\\n</script>\\n\\n<header class=\\"text-gray-600 body-font\\">\\n\\t<div class=\\"container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center\\">\\n\\t  <a class=\\"flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0\\">\\n\\t\\t<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" class=\\"w-10 h-10 text-white p-2 bg-purple-500 rounded-full\\" viewBox=\\"0 0 24 24\\">\\n\\t\\t  <path d=\\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\\"></path>\\n\\t\\t</svg>\\n\\t\\t<span class=\\"ml-3 text-xl\\">Les M\xE9duses</span>\\n\\t  </a>\\n\\t  <nav class=\\"md:ml-auto flex flex-wrap items-center text-base justify-center\\">\\n\\t\\t<a sveltekit:prefetch href=\\"/\\" class=\\"mr-5 hover:text-gray-900\\">Accueil</a>\\n\\t\\t<a sveltekit:prefetch href=\\"/about\\" class=\\"mr-5 hover:text-gray-900\\">About</a>\\n\\t\\t<a sveltekit:prefetch href=\\"/todos\\" class=\\"mr-5 hover:text-gray-900\\">Todos</a>\\n\\t\\t<a class=\\"mr-5 hover:text-gray-900\\">Marche pas encore lol</a>\\n\\t  </nav>\\n\\t  <button class=\\"inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0\\">Contact\\n\\t\\t<svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" class=\\"w-4 h-4 ml-1\\" viewBox=\\"0 0 24 24\\">\\n\\t\\t  <path d=\\"M5 12h14M12 5l7 7-7 7\\"></path>\\n\\t\\t</svg>\\n    </button>\\n</div>\\n</header>\\n\\n<header>\\n\\t<div class=\\"corner\\">\\n\\t\\t<a href=\\"https://kit.svelte.dev\\">\\n\\t\\t\\t<img src={logo} alt=\\"SvelteKit\\" />\\n\\t\\t</a>\\n\\t</div>\\n\\n\\t<nav>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t\\t<ul>\\n\\t\\t\\t<li class:active={$page.path === '/'}><a sveltekit:prefetch href=\\"/\\">Home</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/about'}><a sveltekit:prefetch href=\\"/about\\">About</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href=\\"/todos\\">Todos</a></li>\\n\\t\\t</ul>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t</nav>\\n\\n\\t<div class=\\"corner\\">\\n\\t\\t<!-- TODO put something else here? github link? -->\\n\\t</div>\\n</header>\\n\\n<style>header {\\n  display: flex;\\n  justify-content: space-between;\\n}\\n\\n.corner {\\n  width: 3em;\\n  height: 3em;\\n}\\n\\n.corner a {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  width: 100%;\\n  height: 100%;\\n}\\n\\n.corner img {\\n  width: 2em;\\n  height: 2em;\\n  -o-object-fit: contain;\\n     object-fit: contain;\\n}\\n\\nnav {\\n  display: flex;\\n  justify-content: center;\\n  --background: rgba(255, 255, 255, 0.7);\\n}\\n\\nsvg {\\n  width: 2em;\\n  height: 3em;\\n  display: block;\\n}\\n\\npath {\\n  fill: var(--background);\\n}\\n\\nul {\\n  position: relative;\\n  padding: 0;\\n  margin: 0;\\n  height: 3em;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  list-style: none;\\n  background: var(--background);\\n  background-size: contain;\\n}\\n\\nli {\\n  position: relative;\\n  height: 100%;\\n}\\n\\nli.active::before {\\n  --size: 6px;\\n  content: '';\\n  width: 0;\\n  height: 0;\\n  position: absolute;\\n  top: 0;\\n  left: calc(50% - var(--size));\\n  border: var(--size) solid transparent;\\n  border-top: var(--size) solid var(--accent-color);\\n}\\n\\nnav a {\\n  display: flex;\\n  height: 100%;\\n  align-items: center;\\n  padding: 0 1em;\\n  color: var(--heading-color);\\n  font-weight: 700;\\n  font-size: 0.8rem;\\n  text-transform: uppercase;\\n  letter-spacing: 10%;\\n  text-decoration: none;\\n  transition: color 0.2s linear;\\n}\\n\\na:hover {\\n  color: var(--accent-color);\\n}</style>\\n"],"names":[],"mappings":"AAqDO,MAAM,4BAAC,CAAC,AACb,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,AAChC,CAAC,AAED,OAAO,4BAAC,CAAC,AACP,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,AACb,CAAC,AAED,qBAAO,CAAC,CAAC,cAAC,CAAC,AACT,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,AACd,CAAC,AAED,qBAAO,CAAC,GAAG,cAAC,CAAC,AACX,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,aAAa,CAAE,OAAO,CACnB,UAAU,CAAE,OAAO,AACxB,CAAC,AAED,GAAG,4BAAC,CAAC,AACH,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,YAAY,CAAE,wBAAwB,AACxC,CAAC,AAED,GAAG,4BAAC,CAAC,AACH,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,KAAK,AAChB,CAAC,AAED,IAAI,4BAAC,CAAC,AACJ,IAAI,CAAE,IAAI,YAAY,CAAC,AACzB,CAAC,AAED,EAAE,4BAAC,CAAC,AACF,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,WAAW,CAAE,MAAM,CACnB,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,IAAI,YAAY,CAAC,CAC7B,eAAe,CAAE,OAAO,AAC1B,CAAC,AAED,EAAE,4BAAC,CAAC,AACF,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,IAAI,AACd,CAAC,AAED,EAAE,mCAAO,QAAQ,AAAC,CAAC,AACjB,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,EAAE,CACX,KAAK,CAAE,CAAC,CACR,MAAM,CAAE,CAAC,CACT,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,KAAK,GAAG,CAAC,CAAC,CAAC,IAAI,MAAM,CAAC,CAAC,CAC7B,MAAM,CAAE,IAAI,MAAM,CAAC,CAAC,KAAK,CAAC,WAAW,CACrC,UAAU,CAAE,IAAI,MAAM,CAAC,CAAC,KAAK,CAAC,IAAI,cAAc,CAAC,AACnD,CAAC,AAED,iBAAG,CAAC,CAAC,cAAC,CAAC,AACL,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,CAAC,CAAC,GAAG,CACd,KAAK,CAAE,IAAI,eAAe,CAAC,CAC3B,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,MAAM,CACjB,cAAc,CAAE,SAAS,CACzB,cAAc,CAAE,GAAG,CACnB,eAAe,CAAE,IAAI,CACrB,UAAU,CAAE,KAAK,CAAC,IAAI,CAAC,MAAM,AAC/B,CAAC,AAED,6BAAC,MAAM,AAAC,CAAC,AACP,KAAK,CAAE,IAAI,cAAc,CAAC,AAC5B,CAAC"}`
+  code: "header.svelte-u06xnb.svelte-u06xnb{display:flex;justify-content:space-between}nav.svelte-u06xnb.svelte-u06xnb{display:flex;justify-content:center;--background:rgba(255, 255, 255, 0.7)}svg.svelte-u06xnb.svelte-u06xnb{width:2em;height:3em;display:block}path.svelte-u06xnb.svelte-u06xnb{fill:var(--background)}nav.svelte-u06xnb a.svelte-u06xnb{display:flex;height:100%;align-items:center;padding:0 1em;color:var(--heading-color);font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:10%;text-decoration:none;transition:color 0.2s linear}a.svelte-u06xnb.svelte-u06xnb:hover{color:var(--accent-color)}",
+  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script>\\n\\timport { page } from '$app/stores';\\n\\timport logo from './svelte-logo.svg';\\n</script>\\n\\n<header class=\\"text-gray-600 body-font\\">\\n\\t<div class=\\"container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center\\">\\n\\t  <a class=\\"flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0\\">\\n\\t\\t<!-- <svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" class=\\"w-10 h-10 text-white p-2 bg-purple-500 rounded-full\\" viewBox=\\"0 0 24 24\\">\\n\\t\\t  <path d=\\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\\"></path>\\n\\t\\t</svg> -->\\n\\t\\t<img src=\\"https://zupimages.net/up/21/22/8o3k.png\\" alt=\\"Les M\xE9duses\\" class=\\"max-h-9 max-w-9\\" />\\n\\t\\t<span class=\\"ml-3 text-xl\\">Les M\xE9duses</span>\\n\\t  </a>\\n\\t  <nav class=\\"md:ml-auto flex flex-wrap items-center text-base justify-center\\">\\n\\t\\t<a sveltekit:prefetch href=\\"/\\" class=\\"mr-5 hover:text-gray-900\\">Accueil</a>\\n\\t\\t<a sveltekit:prefetch href=\\"/about\\" class=\\"mr-5 hover:text-gray-900\\">About</a>\\n\\t\\t<a sveltekit:prefetch href=\\"/todos\\" class=\\"mr-5 hover:text-gray-900\\">Todos</a>\\n\\t\\t<a class=\\"mr-5 hover:text-gray-900\\">Marche pas encore lol</a>\\n\\t  </nav>\\n\\t  <button class=\\"inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0\\">Contact\\n\\t\\t<svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" class=\\"w-4 h-4 ml-1\\" viewBox=\\"0 0 24 24\\">\\n\\t\\t  <path d=\\"M5 12h14M12 5l7 7-7 7\\"></path>\\n\\t\\t</svg>\\n    </button>\\n</div>\\n</header>\\n\\n<!-- <header>\\n\\t<div class=\\"corner\\">\\n\\t\\t<a href=\\"https://kit.svelte.dev\\">\\n\\t\\t\\t<img src={logo} alt=\\"SvelteKit\\" />\\n\\t\\t</a>\\n\\t</div>\\n\\n\\t<nav>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t\\t<ul>\\n\\t\\t\\t<li class:active={$page.path === '/'}><a sveltekit:prefetch href=\\"/\\">Home</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/about'}><a sveltekit:prefetch href=\\"/about\\">About</a></li>\\n\\t\\t\\t<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href=\\"/todos\\">Todos</a></li>\\n\\t\\t</ul>\\n\\t\\t<svg viewBox=\\"0 0 2 3\\" aria-hidden=\\"true\\">\\n\\t\\t\\t<path d=\\"M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z\\" />\\n\\t\\t</svg>\\n\\t</nav>\\n\\n\\t<div class=\\"corner\\">\\n\\t</div>\\n</header> -->\\n\\n<style>header {\\n  display: flex;\\n  justify-content: space-between;\\n}\\n\\n.corner {\\n  width: 3em;\\n  height: 3em;\\n}\\n\\n.corner a {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  width: 100%;\\n  height: 100%;\\n}\\n\\n.corner img {\\n  width: 2em;\\n  height: 2em;\\n  -o-object-fit: contain;\\n     object-fit: contain;\\n}\\n\\nnav {\\n  display: flex;\\n  justify-content: center;\\n  --background: rgba(255, 255, 255, 0.7);\\n}\\n\\nsvg {\\n  width: 2em;\\n  height: 3em;\\n  display: block;\\n}\\n\\npath {\\n  fill: var(--background);\\n}\\n\\nul {\\n  position: relative;\\n  padding: 0;\\n  margin: 0;\\n  height: 3em;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  list-style: none;\\n  background: var(--background);\\n  background-size: contain;\\n}\\n\\nli {\\n  position: relative;\\n  height: 100%;\\n}\\n\\nli.active::before {\\n  --size: 6px;\\n  content: '';\\n  width: 0;\\n  height: 0;\\n  position: absolute;\\n  top: 0;\\n  left: calc(50% - var(--size));\\n  border: var(--size) solid transparent;\\n  border-top: var(--size) solid var(--accent-color);\\n}\\n\\nnav a {\\n  display: flex;\\n  height: 100%;\\n  align-items: center;\\n  padding: 0 1em;\\n  color: var(--heading-color);\\n  font-weight: 700;\\n  font-size: 0.8rem;\\n  text-transform: uppercase;\\n  letter-spacing: 10%;\\n  text-decoration: none;\\n  transition: color 0.2s linear;\\n}\\n\\na:hover {\\n  color: var(--accent-color);\\n}</style>\\n"],"names":[],"mappings":"AAqDO,MAAM,4BAAC,CAAC,AACb,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,aAAa,AAChC,CAAC,AAsBD,GAAG,4BAAC,CAAC,AACH,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,YAAY,CAAE,wBAAwB,AACxC,CAAC,AAED,GAAG,4BAAC,CAAC,AACH,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,OAAO,CAAE,KAAK,AAChB,CAAC,AAED,IAAI,4BAAC,CAAC,AACJ,IAAI,CAAE,IAAI,YAAY,CAAC,AACzB,CAAC,AAgCD,iBAAG,CAAC,CAAC,cAAC,CAAC,AACL,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,CAAC,CAAC,GAAG,CACd,KAAK,CAAE,IAAI,eAAe,CAAC,CAC3B,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,MAAM,CACjB,cAAc,CAAE,SAAS,CACzB,cAAc,CAAE,GAAG,CACnB,eAAe,CAAE,IAAI,CACrB,UAAU,CAAE,KAAK,CAAC,IAAI,CAAC,MAAM,AAC/B,CAAC,AAED,6BAAC,MAAM,AAAC,CAAC,AACP,KAAK,CAAE,IAAI,cAAc,CAAC,AAC5B,CAAC"}`
 };
 var Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $page, $$unsubscribe_page;
-  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$result.css.add(css$5);
-  $$unsubscribe_page();
-  return `<header class="${"text-gray-600 body-font svelte-u06xnb"}"><div class="${"container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"}"><a class="${"flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 svelte-u06xnb"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" stroke="${"currentColor"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" class="${"w-10 h-10 text-white p-2 bg-purple-500 rounded-full svelte-u06xnb"}" viewBox="${"0 0 24 24"}"><path d="${"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"}" class="${"svelte-u06xnb"}"></path></svg>
+  return `<header class="${"text-gray-600 body-font svelte-u06xnb"}"><div class="${"container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"}"><a class="${"flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 svelte-u06xnb"}">
+		<img src="${"https://zupimages.net/up/21/22/8o3k.png"}" alt="${"Les M\xE9duses"}" class="${"max-h-9 max-w-9"}">
 		<span class="${"ml-3 text-xl"}">Les M\xE9duses</span></a>
 	  <nav class="${"md:ml-auto flex flex-wrap items-center text-base justify-center svelte-u06xnb"}"><a sveltekit:prefetch href="${"/"}" class="${"mr-5 hover:text-gray-900 svelte-u06xnb"}">Accueil</a>
 		<a sveltekit:prefetch href="${"/about"}" class="${"mr-5 hover:text-gray-900 svelte-u06xnb"}">About</a>
@@ -3048,16 +3018,7 @@ var Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 	  <button class="${"inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"}">Contact
 		<svg fill="${"none"}" stroke="${"currentColor"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" class="${"w-4 h-4 ml-1 svelte-u06xnb"}" viewBox="${"0 0 24 24"}"><path d="${"M5 12h14M12 5l7 7-7 7"}" class="${"svelte-u06xnb"}"></path></svg></button></div></header>
 
-<header class="${"svelte-u06xnb"}"><div class="${"corner svelte-u06xnb"}"><a href="${"https://kit.svelte.dev"}" class="${"svelte-u06xnb"}"><img${add_attribute("src", logo, 0)} alt="${"SvelteKit"}" class="${"svelte-u06xnb"}"></a></div>
-
-	<nav class="${"svelte-u06xnb"}"><svg viewBox="${"0 0 2 3"}" aria-hidden="${"true"}" class="${"svelte-u06xnb"}"><path d="${"M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z"}" class="${"svelte-u06xnb"}"></path></svg>
-		<ul class="${"svelte-u06xnb"}"><li class="${["svelte-u06xnb", $page.path === "/" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/"}" class="${"svelte-u06xnb"}">Home</a></li>
-			<li class="${["svelte-u06xnb", $page.path === "/about" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/about"}" class="${"svelte-u06xnb"}">About</a></li>
-			<li class="${["svelte-u06xnb", $page.path === "/todos" ? "active" : ""].join(" ").trim()}"><a sveltekit:prefetch href="${"/todos"}" class="${"svelte-u06xnb"}">Todos</a></li></ul>
-		<svg viewBox="${"0 0 2 3"}" aria-hidden="${"true"}" class="${"svelte-u06xnb"}"><path d="${"M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z"}" class="${"svelte-u06xnb"}"></path></svg></nav>
-
-	<div class="${"corner svelte-u06xnb"}"></div>
-</header>`;
+`;
 });
 var css$4 = {
   code: "main.svelte-1i5iwkv.svelte-1i5iwkv{flex:1;display:flex;flex-direction:column;padding:1rem;width:100%;max-width:1024px;margin:0 auto;box-sizing:border-box}footer.svelte-1i5iwkv.svelte-1i5iwkv{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px}footer.svelte-1i5iwkv a.svelte-1i5iwkv{font-weight:bold}@media(min-width: 480px){footer.svelte-1i5iwkv.svelte-1i5iwkv{padding:40px 0}}",

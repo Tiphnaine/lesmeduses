@@ -5,7 +5,7 @@
 
 <header class="text-gray-600 body-font">
 	<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-	  <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+	  <a class="font-sans flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
 		<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
 		  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
 		</svg> -->
@@ -13,16 +13,12 @@
 		<span class="ml-3 text-xl">Les Méduses</span>
 	  </a>
 	  <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-		<a sveltekit:prefetch href="/" class="mr-5 hover:text-gray-900">Accueil</a>
-		<a sveltekit:prefetch href="/about" class="mr-5 hover:text-gray-900">About</a>
-		<a sveltekit:prefetch href="/todos" class="mr-5 hover:text-gray-900">Todos</a>
-		<a class="mr-5 hover:text-gray-900">Marche pas encore lol</a>
+		<a sveltekit:prefetch href="/" class="font-sans mr-5 hover:text-gray-900">Homepage</a>
+		<a sveltekit:prefetch href="/about" class="font-sans mr-5 hover:text-gray-900">About</a>
+		<a sveltekit:prefetch href="/todos" class="font-sans mr-5 hover:text-gray-900">Todos</a>
+		<a class="mr-5 hover:text-gray-900 font-sans">Marche pas encore lol</a>
 	  </nav>
-	  <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact
-		<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-		  <path d="M5 12h14M12 5l7 7-7 7"></path>
-		</svg>
-    </button>
+	  <button class="font-sans inline-flex items-center bg-gray-100 border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0">Contact</button>
 </div>
 </header>
 
@@ -79,7 +75,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		--background: rgb(255, 255, 255);
 	}
 
 	svg {
@@ -128,15 +124,15 @@
 		align-items: center;
 		padding: 0 1em;
 		color: var(--heading-color);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
+		font-weight: 600;
+		/* font-size: 0.8rem; */
+		/* text-transform: uppercase; */
 		letter-spacing: 10%;
 		text-decoration: none;
 		transition: color 0.2s linear;
 	}
 
 	a:hover {
-		color: var(--accent-color);
+		color: #B366A4;
 	}
 </style>
