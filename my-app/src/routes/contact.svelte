@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="p-2 w-full">
-            <button type="submit" class="font-sans inline-flex items-center bg-gray-100 border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0 flex mx-auto">Envoyer</button>
+            <button type="submit" class="font-sans inline-flex items-center bg-gray-100 border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0 flex mx-auto">Send</button>
           </div>
           <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
           
