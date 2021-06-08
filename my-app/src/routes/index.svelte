@@ -15,28 +15,49 @@
 		<div class="welcome">
 			<picture>
 				<img class= "object-left-top" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses" />
-        <img class= "object-right-top" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses" />
+        
+
+        
 			</picture>
 		</div>
-
-		Les Méduses<br />
+    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      Les Méduses<br />
+    </p>
+		
 	</h1>
 
 	<h2>
-		An ESSEC Initiative
-	</h2>
+		<h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">An ESSEC Initiative
 
 </section>
 <section class="text-indigo-600 font">
   <div class="container px-5 py-24 mx-auto">
     <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Who we are</h1>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Les Méduses is involved in various working groups dealing with Sexual and Sexist Violence (SSV). Each working group analyses the existing dispositives and works with the school administration in question to propose recommendations.</p>
+      <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Who we are</h2>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s font-semibold">Les Méduses is involved in various working groups dealing with Sexual and Sexist Violence (SSV). Each working group analyses the existing dispositives and works with the school administration in question to propose recommendations.</p>
       <div class="flex mt-6 justify-center">
         <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
       </div>
+      <div class="text-center mb-20">
+        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">The Creation</h2>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s font-semibold">In November 2020, Tara MacKeown and Charlotte Caillat launched a call for contributions to fight against sexist and sexual violence (SSV) at ESSEC.
+
+          This call, aimed at all ESSEC stakeholders (students, alumni, staff, faculty, administration, etc.) generated more than 500 interactions and led 126 ESSEC members to bring forth their recommendations on the subject to the table.
+          
+          This collaboration led to the construction of an action plan to fight against sexist and sexual violence at ESSEC, based on the current situation. The first part describes the process; the second part does a mapping of what has already been done, notably by the BDEs, HeforShe and the administration; the third part presents the recommendations of ESSEC members ; and the last part looks at the future, and the follow-up of these recommendations.”
+          </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+        </div>
+      </div>
     </div>
-  </section>
+    </div>
+</section>
+    
+
+
+
+
 <section class="text-gray-600 body-font"> 
     <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="py-12 bg-white">
@@ -117,6 +138,94 @@
   </div>
 </div>
   </section>
+
+  <section class="text-gray-600 body-font"> 
+    <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Testimonials
+      </p>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+        Why it matters
+      </p>
+    </div>
+  </section>
+
+
+<div class="testimonial-1 py-4 md:py-12">
+  <div class="container mx-auto px-4">
+      <div class="md:flex md:flex-wrap md:-mx-4 mb-4">
+
+          <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Charlotte.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"We must all do our best to improve visibility of VSS in Hogher Education and the workplace."</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Charlotte C.</div>
+                      <div class="text-gray-600">President of Les Méduses</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Louise.jpg" alt="" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"We are commited to make a change! Thanks guys, keep up the good work!"</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Louise O.</div>
+                      <div class="text-gray-600">Team Member</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 md:px-4 mt-6">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Tiphaine.jfif" alt="Candace H." class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"We are covinced that thanks to our actions thing are getting better and better</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine E.</div>
+                      <div class="text-gray-600">Team Member, IT manager</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 md:px-4 mt-6">
+            <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                    <img src="src\lib\images\Alice.jfif" alt="" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <p class="text-gray-600">"We are covinced that thanks to our actions thing are getting better and better</p>
+                    <div class="text-gray-900 font-bold uppercase mt-6">- Alice G.</div>
+                    <div class="text-gray-600">Team Member</div>
+                </div>
+            </div>
+        
+
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
   <section class="text-gray-600 body-font relative">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
@@ -180,6 +289,9 @@
     </div>
   </section>
 
+
+ 
+
 <style>
 	section {
 		display: flex;
@@ -198,4 +310,8 @@
 		width: 200px;
     height: 200px;
 	}
+
+  .testimonial {
+  border-radius: 1rem;
+}
 </style>
