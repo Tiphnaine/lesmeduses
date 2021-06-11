@@ -175,7 +175,7 @@
           <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
               <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
                   <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="src\lib\images\Charlotte.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
+                      <img src="https://nsa40.casimages.com/img/2021/06/11//210611070726412505.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
                   </div>
                   <div>
                       <p class="text-gray-600">"We must all do our best to improve visibility of VSS in Higher education and the workplace.
@@ -189,7 +189,7 @@
           <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
               <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
                   <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="src\lib\images\Louise.jpg" alt="" class="w-full h-full object-cover">
+                      <img src="https://nsa40.casimages.com/img/2021/06/11//210611070725910139.jpg" alt="Louise O." class="w-full h-full object-cover">
                   </div>
                   <div>
                       <p class="text-gray-600">"We are commited to make a change! Thanks guys, keep up the good work! Every form of fight is essential to change the situation, get involved where you feel most comfortable!"</p>
@@ -202,11 +202,11 @@
           <div class="md:w-1/2 md:px-4 mt-6">
               <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
                   <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="src\lib\images\Tiphaine.jfif" alt="Candace H." class="w-full h-full object-cover">
+                      <img src="https://nsa40.casimages.com/img/2021/06/11//210611070725756392.jpg" alt="Tiphaine H." class="w-full h-full object-cover">
                   </div>
                   <div>
                       <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better.</p>
-                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine E.</div>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine H.</div>
                       <div class="text-gray-600">Team Member, IT manager</div>
                   </div>
               </div>
@@ -215,7 +215,7 @@
           <div class="md:w-1/2 md:px-4 mt-6">
             <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
                 <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                    <img src="src\lib\images\Alice.jfif" alt="" class="w-full h-full object-cover">
+                    <img src="https://nsa40.casimages.com/img/2021/06/11//210611070726158685.jpg" alt="Alice G." class="w-full h-full object-cover">
                 </div>
                 <div>
                     <p class="text-gray-600">"There are many forms of commitment against gender-based violence.
