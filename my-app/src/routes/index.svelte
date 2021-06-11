@@ -10,41 +10,68 @@
 	<title>Homepage</title>
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<img class= "object-left-top" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses" />
-        <img class= "object-right-top" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses" />
-			</picture>
-		</div>
 
-		Les Méduses<br />
-	</h1>
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="lg:w-1/6 md:w-1/6 w-1/6 mb-10 object-cover object-center rounded" src="https://upload.wikimedia.org/wikipedia/commons/9/98/ESSEC_Logo.svg" alt="ESSEC">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses">
+    <h1>
+		
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Les Méduses<br />
+      </p>
+  </div>
+  <div class="flex flex-col text-center w-full mb-12">
+    <h1 class="text-base text-indigo-600 font-semibold tracking-wide ">An ESSEC Initiative</h1>
+    
 
-	<h2>
-		An ESSEC Initiative
-	</h2>
-
+  </div>
 </section>
-<section class="text-indigo-600 font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Who we are</h1>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Les Méduses is involved in various working groups dealing with Sexual and Sexist Violence (SSV). Each working group analyses the existing dispositives and works with the school administration in question to propose recommendations.</p>
-      <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font"> 
+    
+  <div class="py-12">
+    <div class="max-w-7xl px-4 sm:px-20 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Who we are</h2>
+        
+        <p class="mt-4 max-w-2xl text-xl text-gray-900 lg:mx-auto">
+          Les Méduses is involved in various working groups dealing with Sexual and Sexist Violence (SSV). Each working group analyses the existing dispositives and works with the school administration in question to propose recommendations.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section> 
 <section class="text-gray-600 body-font"> 
-    <!-- This example requires Tailwind CSS v2.0+ -->
+    
+  <div class="py-12">
+    <div class="max-w-7xl px-4 sm:px-20 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">The creation</h2>
+        
+        <p class="mt-4 max-w-2xl text-xl text-gray-900 lg:mx-auto">
+          In November 2020, Tara MacKeown and Charlotte Caillat launched a call for contributions to fight against sexist and sexual violence (SSV) at ESSEC. This call, aimed at all ESSEC stakeholders (students, alumni, staff, faculty, administration, etc.) generated more than 500 interactions and led 126 ESSEC members to bring forth their recommendations on the subject to the table. This collaboration led to the construction of an action plan to fight against sexist and sexual violence at ESSEC, based on the current situation. The first part describes the process; the second part does a mapping of what has already been done, notably by the BDEs, HeforShe and the administration; the third part presents the recommendations of ESSEC members ; and the last part looks at the future, and the follow-up of these recommendations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="text-gray-600 body-font"> 
+    
 <div class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our objectives</h2>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        A better comprehension of Sexist and Sexual Violence
+        A better Comprehension of Sexist and Sexual Violence
       </p>
       <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
         Discover the pillars of our actions
@@ -56,7 +83,7 @@
         <div class="relative">
           <dt>
             <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-              <!-- Heroicon name: outline/globe-alt -->
+              
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
               </svg>
@@ -71,7 +98,7 @@
         <div class="relative">
           <dt>
             <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-              <!-- Heroicon name: outline/scale -->
+              
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
               </svg>
@@ -86,7 +113,7 @@
         <div class="relative">
           <dt>
             <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-              <!-- Heroicon name: outline/lightning-bolt -->
+              
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -101,7 +128,7 @@
         <div class="relative">
           <dt>
             <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-              <!-- Heroicon name: outline/annotation -->
+              
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
               </svg>
@@ -117,11 +144,99 @@
   </div>
 </div>
   </section>
+
+    
+
+<section class="text-gray-600 body-font"> 
+     
+<div class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="py-5 ">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Few words from our team members</h2>
+          Why it matters to us
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+
+<div class="testimonial-1 py-4 md:py-12">
+  <div class="container mx-auto px-4">
+      <div class="md:flex md:flex-wrap md:-mx-4 mb-4">
+
+          <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Charlotte.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"We must all do our best to improve visibility of VSS in Higher education and the workplace.
+                        We generated more than 500 interactions and led 126 ESSEC members to bring forth their recommendations."</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Charlotte C.</div>
+                      <div class="text-gray-600">President of Les Méduses</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Louise.jpg" alt="" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"We are commited to make a change! Thanks guys, keep up the good work! Every form of fight is essential to change the situation, get involved where you feel most comfortable!"</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Louise O.</div>
+                      <div class="text-gray-600">Team Member</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 md:px-4 mt-6">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Tiphaine.jfif" alt="Candace H." class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better.</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine E.</div>
+                      <div class="text-gray-600">Team Member, IT manager</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="md:w-1/2 md:px-4 mt-6">
+            <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                    <img src="src\lib\images\Alice.jfif" alt="" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <p class="text-gray-600">"There are many forms of commitment against gender-based violence.
+                      We naturally think of marches, collages and so-called "field" actions. But the fight against gender-based violence is also a fight of ideas."</p>
+                    <div class="text-gray-900 font-bold uppercase mt-6">- Alice G.</div>
+                    <div class="text-gray-600">Team Member</div>
+                </div>
+            </div>
+        
+
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
   <section class="text-gray-600 body-font relative">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Please do not hesitate to reach us !</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Please do not hesitate to reach Les Méduses !</p>
       </div>
       <div class="lg:w-1/2 md:w-2/3 mx-auto">
         <div class="flex flex-wrap -m-2">
@@ -147,33 +262,9 @@
             <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
           </div>
           <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            <a class="text-indigo-500">example@email.com</a>
-            <p class="leading-normal my-5">49 Smith St.
-              <br>Saint Cloud, MN 56301
-            </p>
-            <span class="inline-flex">
-              <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-4 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-4 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a class="ml-4 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
+        
+            <a class="text-indigo-500">contact.meduses@gmail.com</a>
+          
           </div>
         </div>
       </div>
@@ -198,4 +289,8 @@
 		width: 200px;
     height: 200px;
 	}
+
+  .testimonial {
+  border-radius: 1rem;
+}
 </style>
