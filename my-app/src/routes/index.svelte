@@ -206,7 +206,7 @@
                   </div>
                   <div>
                       <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better.</p>
-                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine E.</div>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine H.</div>
                       <div class="text-gray-600">Team Member, IT manager</div>
                   </div>
               </div>
