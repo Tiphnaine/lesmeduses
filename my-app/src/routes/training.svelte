@@ -1,53 +1,40 @@
 <svelte:head>
-	<title>The Perception of the naked body</title>
+	<title>Support structures for victims of SSV</title>
 </svelte:head>
 
 <head>
     <style>
     /*each image is referenced twice in the HTML, but each image only needs to be updated in the CSS*/
     .image1 {
-      content: url("https://i.imgur.com/2Fp3NAr.png")
+      content: url("https://i.imgur.com/MkobVHR.png")
     }
   
     .image2 {
-      content: url("https://i.imgur.com/eHQWXAS.png")
+      content: url("https://i.imgur.com/oP3Zsfp.png")
     }
   
     .image3 {
-      content: url("https://i.imgur.com/z7B0tEP.png")
+      content: url("https://i.imgur.com/5EgGZJp.png")
     }
   
     .image4 {
-      content: url("https://i.imgur.com/GwiBdn6.png")
+      content: url("https://i.imgur.com/80v2R55.png")
     }
   
     .image5 {
-      content: url("https://i.imgur.com/vTsCM2z.png")
+      content: url("https://i.imgur.com/IfLPTDB.png")
     }
 
     .image6 {
-      content: url("https://i.imgur.com/RDq1YJe.png")
-    }
-
-    .image7 {
-      content: url("https://i.imgur.com/GsG64OZ.png")
-    }
-    .image8 {
-      content: url("https://i.imgur.com/ZCX7rwm.png")
-    }
-
-    .image9 {
-      content: url("https://i.imgur.com/P6EZ2VJ.png")
+      content: url("https://i.imgur.com/XSisIuU.png")
     }
       </style>
   </head> 
-  
+ 
   <body>
     <section class="mx-auto max-w-2xl">
-      <h2 class="text-4xl text-center tracking-wide font-extrabold font-serif leading-loose mb-2">The Perception of the naked body</h2>
-      <p class="text-xl text-center tracking-wide font-serif leading-loose mb-2">Did you follow the case of Corinne Masiero? No, it doesn't ring a bell ? Okay.
-        The woman who undressed on stage during the Césars ceremony to denounce the situation of the temporary show business workers? It comes back faster.
-        Today, les Méduses present you their first campaign about the gendered perception of the naked body. Why did Corinne Masiero's performance shock so much? Why did we ignore the message she was trying to convey and comment on her physique instead?</p>
+      <h2 class="text-4xl text-center tracking-wide font-extrabold font-serif leading-loose mb-2">Training of students</h2>
+      <p class="text-xl text-center tracking-wide font-serif leading-loose mb-2">Today, we would like to present one of our working groups, composed of students and alumni: support structures for victims of SSV (sexist and sexual violence).</p>
       <div class="shadow-2xl relative">
         <!-- large image on slides -->
         <div class="mySlides hidden">
@@ -67,15 +54,6 @@
         </div>
         <div class="mySlides hidden">
           <div class="image6 w-full object-cover"></div>
-        </div>
-        <div class="mySlides hidden">
-          <div class="image7 w-full object-cover"></div>
-        </div>
-        <div class="mySlides hidden">
-          <div class="image8 w-full object-cover"></div>
-        </div>
-        <div class="mySlides hidden">
-          <div class="image9 w-full object-cover"></div>
         </div>
   
         <!-- butttons -->
@@ -102,15 +80,6 @@
           </div>
           <div>
             <img class="image6 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onclick="currentSlide(6)" alt="article">
-          </div>
-          <div>
-            <img class="image7 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onclick="currentSlide(7)" alt="article">
-          </div>
-          <div>
-            <img class="image8 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onclick="currentSlide(8)" alt="article">
-          </div>
-          <div>
-            <img class="image9 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onclick="currentSlide(9)" alt="article">
           </div>
         </div>
       </div>
