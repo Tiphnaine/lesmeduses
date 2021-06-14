@@ -18,7 +18,8 @@
 		<a sveltekit:prefetch href="/team" class="font-sans mr-5  font-sans">Team</a>
 		<a sveltekit:prefetch href="/articles" class="font-sans mr-5  font-sans">Articles</a>
 	  </nav>
-	  <button class="font-sans transition duration-300 text-xs inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full lg:text-base mt-4 flex md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans">Contact</a></button>
+	  <a sveltekit:prefetch href="/contact" class="font-sans transition duration-300 text-xs inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full lg:text-base mt-4 flex md:mt-0 hover:no-underline">Contact</a>
+
 
 	</div>
 </header>
