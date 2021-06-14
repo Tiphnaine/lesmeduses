@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Team</title>
+</svelte:head>
+
 <section class="text-gray-600 body-font"> 
 
     <div class="py-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

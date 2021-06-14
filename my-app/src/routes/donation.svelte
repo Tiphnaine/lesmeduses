@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>To make a donation</title>
+	<title>Donation</title>
 </svelte:head>
 
  

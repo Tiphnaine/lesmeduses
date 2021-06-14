@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Training of students</title>
+	<title>Support structures for victims of SSV</title>
 </svelte:head>
  
 <head>
