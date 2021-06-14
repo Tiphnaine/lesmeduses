@@ -7,7 +7,7 @@
   <div class="py-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
-          <h2 class="text-base font-semibold tracking-wide uppercase">Our article</h2>
+          <h1 class="font-sans sm:text-3xl text-2xl font-bold title-font mb-4">Our article</h1>
           <p>Learn more about our work</p>
         </div>
       </div>
