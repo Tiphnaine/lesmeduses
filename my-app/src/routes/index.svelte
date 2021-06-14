@@ -11,34 +11,25 @@
 </svelte:head>
 
 
-<section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-    <img class="lg:w-1/6 md:w-1/6 w-1/6 mb-10 object-cover object-center rounded" src="https://upload.wikimedia.org/wikipedia/commons/9/98/ESSEC_Logo.svg" alt="ESSEC">
-    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses">
-    <h1>
-		
-      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        Les Méduses<br />
-      </p>
-  </div>
-  <div class="flex flex-col text-center w-full mb-12">
-    <h1 class="text-base text-indigo-600 font-semibold tracking-wide ">An ESSEC Initiative</h1>
+<section>
+  <div class="container mx-auto flex px-5 py-5 items-center justify-center flex-col text-center w-full mb-12">
+    <img class=" w-1/6 mb-10 object-cover object-center rounded" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses">
+    <!-- <img class="w-1/12 mb-10 object-cover object-center rounded" src="https://upload.wikimedia.org/wikipedia/commons/9/98/ESSEC_Logo.svg" alt="ESSEC"> -->
 
+      <h1 class="font-sans mt-2 text-3xl leading-8 font-bold tracking-tight sm:text-4xl my-2">
+        Les Méduses
+      </h1>
+    <h1 class="font-sans text-base tracking-wide">An ESSEC Initiative</h1>
   </div>
   <div>
-    <blockquote className="p-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
+    <blockquote className="p-4 italic text-center border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
       <p className="mb-2">“In Western culture, strong women have historically been imagined as threats requiring male conquest and control, and Medusa herself has long been the go-to figure for those seeking to demonize female authority.”
-        </p>
-      <cite>
-        -
         <a href="https://www.theatlantic.com/entertainment/archive/2016/11/the-original-nasty-woman-of-classical-myth/506591/"target="_blank" rel="noopener noreferrer">
-          Elizabeth Johnston
-        </a>
-      </cite>
+         - Elizabeth Johnston
+        </a> 
+      </p>
     </blockquote>
   </div>
-  
-
 </section>
 
 
@@ -270,16 +261,31 @@
 		align-items: center;
 		flex: 1;
 	}
+  p {
+		width: 100%;
+    --tw-text-opacity: 1;
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
+    /* text-align:center; */
+	}
 
 	h1 {
 		width: 100%;
+    color : #B366A4;
+	}
+  a {
+		color: var(--heading-color);
+		text-decoration: none;
+		transition: color 0.2s linear;
 	}
 
-	.welcome {
+	a:hover {
+		color: #B366A4;
+	}
+	/* .welcome {
 		position: absolute;
 		width: 200px;
     height: 200px;
-	}
+	} */
 
   .testimonial {
   border-radius: 1rem;
