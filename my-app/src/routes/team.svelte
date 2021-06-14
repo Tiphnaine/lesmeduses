@@ -52,10 +52,10 @@
             <div class="md:w-1/2 md:px-4 mt-6">
                 <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
                     <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                        <img src="src\lib\images\Tiphaine.jfif" alt="Candace H." class="w-full h-full object-cover">
+                        <img src="src\lib\images\Tiphaine.jfif" alt="Tiphaine H." class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better.</p>
+                        <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better."</p>
                         <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine E.</div>
                         <div class="text-gray-600">Team Member, IT manager</div>
                     </div>
