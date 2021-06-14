@@ -3,8 +3,8 @@
 	import logo from './svelte-logo.svg';
 </script>
 
-<header class="text-gray-600 body-font">
-	<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<header class="text-gray-600  bg-gray-200 body-font shadow-lg">
+	<div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
 	  <a class="font-sans flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
 		<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
 		  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -13,12 +13,12 @@
 		<span class="ml-3 text-xl">Les Méduses</span>
 	  </a>
 	  <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-		<a sveltekit:prefetch href="/" class="font-sans mr-5 hover:text-gray-900">Homepage</a>
-		<a sveltekit:prefetch href="/donation" class="font-sans mr-5 hover:text-gray-900">Donations</a>
-		<a sveltekit:prefetch href="/team" class="font-sans mr-5 hover:text-gray-900 font-sans">Team</a>
-		<a sveltekit:prefetch href="/articles" class="font-sans mr-5 hover:text-gray-900 font-sans">Articles</a>
+		<a sveltekit:prefetch href="/" class="font-sans mr-5 ">Homepage</a>
+		<a sveltekit:prefetch href="/donation" class="font-sans mr-5 ">Donations</a>
+		<a sveltekit:prefetch href="/team" class="font-sans mr-5  font-sans">Team</a>
+		<a sveltekit:prefetch href="/articles" class="font-sans mr-5  font-sans">Articles</a>
 	  </nav>
-	  <button class="font-sans inline-flex items-center bg-gray-100 border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans hover:text-gray-900 text-gray-500">Contact</a></button>
+	  <button class="font-sans inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full text-base mt-4 md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans">Contact</a></button>
 </div>
 </header>
 

@@ -12,7 +12,7 @@
 
 
 <section>
-  <div class="container mx-auto flex px-5 items-center justify-center flex-col text-center w-full mb-3">
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col text-center w-full my-3">
     <img class=" w-1/6 mb-10 object-cover object-center rounded" src="https://www.zupimages.net/up/21/22/8o3k.png?fbclid=IwAR1pB6euzVFT6imo5Lx9AYLDbLTqi_NSc9l1nGp5zPGJdJZp4eMSs489Sk8" alt="Les Méduses">
     <!-- <img class="w-1/12 mb-10 object-cover object-center rounded" src="https://upload.wikimedia.org/wikipedia/commons/9/98/ESSEC_Logo.svg" alt="ESSEC"> -->
 
