@@ -4,7 +4,6 @@
 
 <script>
 	import Counter from '$lib/Counter/index.svelte';
-  import Contact from '$lib/Contact/index.svelte'
 </script>
 
 <svelte:head>
@@ -24,9 +23,22 @@
   </div>
   <div class="flex flex-col text-center w-full mb-12">
     <h1 class="text-base text-indigo-600 font-semibold tracking-wide ">An ESSEC Initiative</h1>
-    
 
   </div>
+  <div>
+    <blockquote className="p-4 italic border-l-4 bg-neutral-100 text-neutral-600 border-neutral-500 quote">
+      <p className="mb-2">“In Western culture, strong women have historically been imagined as threats requiring male conquest and control, and Medusa herself has long been the go-to figure for those seeking to demonize female authority.”
+        </p>
+      <cite>
+        -
+        <a href="https://www.theatlantic.com/entertainment/archive/2016/11/the-original-nasty-woman-of-classical-myth/506591/"target="_blank" rel="noopener noreferrer">
+          Elizabeth Johnston
+        </a>
+      </cite>
+    </blockquote>
+  </div>
+  
+
 </section>
 
 
@@ -148,92 +160,107 @@
 
     
 
+
+
+
 <section class="text-gray-600 body-font"> 
      
-<div class="py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <div class="py-5 ">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          
-          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Few words from our team members</h2>
-          Why it matters to us
-          
+  <div class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+      <div class="py-5 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="lg:text-center">
+            
+            <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">News</h2>
+            Discover our latest news : events, participations ,discussions...
+            
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-  </section>
+    </section>
 
 
-<div class="testimonial-1 py-4 md:py-12">
-  <div class="container mx-auto px-4">
-      <div class="md:flex md:flex-wrap md:-mx-4 mb-4">
-
-          <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
-              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
-                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="https://nsa40.casimages.com/img/2021/06/11//210611070726412505.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
-                  </div>
-                  <div>
-                      <p class="text-gray-600">"We must all do our best to improve visibility of VSS in Higher education and the workplace.
-                        We generated more than 500 interactions and led 126 ESSEC members to bring forth their recommendations."</p>
-                      <div class="text-gray-900 font-bold uppercase mt-6">- Charlotte C.</div>
-                      <div class="text-gray-600">President of Les Méduses</div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
-              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
-                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="https://nsa40.casimages.com/img/2021/06/11//210611070725910139.jpg" alt="Louise O." class="w-full h-full object-cover">
-                  </div>
-                  <div>
-                      <p class="text-gray-600">"We are commited to make a change! Thanks guys, keep up the good work! Every form of fight is essential to change the situation, get involved where you feel most comfortable!"</p>
-                      <div class="text-gray-900 font-bold uppercase mt-6">- Louise O.</div>
-                      <div class="text-gray-600">Team Member</div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="md:w-1/2 md:px-4 mt-6">
-              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
-                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="https://nsa40.casimages.com/img/2021/06/11//210611070725756392.jpg" alt="Tiphaine H." class="w-full h-full object-cover">
-                  </div>
-                  <div>
-                      <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better.</p>
-                      <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine H.</div>
-                      <div class="text-gray-600">Team Member, IT manager</div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="md:w-1/2 md:px-4 mt-6">
-            <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
-                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                    <img src="https://nsa40.casimages.com/img/2021/06/11//210611070726158685.jpg" alt="Alice G." class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <p class="text-gray-600">"There are many forms of commitment against gender-based violence.
-                      We naturally think of marches, collages and so-called "field" actions. But the fight against gender-based violence is also a fight of ideas."</p>
-                    <div class="text-gray-900 font-bold uppercase mt-6">- Alice G.</div>
-                    <div class="text-gray-600">Team Member</div>
-                </div>
-            </div>
-        
-
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="-my-8 divide-y-2 divide-gray-100">
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-gray-700">CONFERENCE</span>
+          <span class="mt-1 text-gray-500 text-sm">14 Jun 2021</span>
         </div>
-
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">"Draw me a VSS" conference event</h2>
+          <p class="leading-relaxed">The program:
+          <ul>
+            <li>- Introduction with the key figures of the SSV in France</li>
+            <li>- Explanation of the process of Dessine-moi une VSS</li>
+            <li>- Presentation of several works from the call for artistic participations</li>
+            <li>- Sociological and art history approach of the SSV</li>
+            <li>- Talking about gender-based violence to young people</li>
+            <li>- Conclusion and call for commitment - testimony of Solimove</li>
+          </ul>
+          <a href="https://fr.linkedin.com/company/les-m%C3%A9duses" class="text-indigo-500 inline-flex items-center mt-4">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
       </div>
+
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-gray-700">CONFERENCE</span>
+          <span class="mt-1 text-gray-500 text-sm">31 May 2021</span>
+        </div>
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Festival #GenerationÉgalitéVoices x ONU Femmes France</h2>
+          <p class="leading-relaxed">The program:
+          <ul>
+            <li>- Conclusions drawn on the perception of SSV in France. </li>
+            <li>- Arts & Engagement</li>
+          </ul>
+          <a href="https://fr.linkedin.com/company/les-m%C3%A9duses" class="text-indigo-500 inline-flex items-center mt-4">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-gray-700">CONTEST</span>
+          <span class="mt-1 text-gray-500 text-sm">10-24 May 2021</span>
+        </div>
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Draw me a VSS x Génération Egalité Voices</h2>
+          <p class="leading-relaxed">The program:
+          <ul>
+            <li>- Conclusions drawn on the perception of SSV in France. </li>
+            <li>- Arts & Engagement</li>
+          </ul>
+          <a href="https://www.facebook.com/events/1437049013299624?ref=newsfeed" class="text-indigo-500 inline-flex items-center mt-4">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+
+    </div>
   </div>
-</div>
+</section>
 
 
-  <Contact/>
+
 
 <style>
 	section {

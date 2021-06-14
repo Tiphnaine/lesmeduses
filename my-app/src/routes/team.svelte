@@ -1,6 +1,90 @@
-<svelte:head>
-	<title>Our Team</title>
-</svelte:head>
+<section class="text-gray-600 body-font"> 
+     
+  <div class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+      <div class="py-5 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="lg:text-center">
+            
+            <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Few words from our team members</h2>
+            Why it matters to us
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+<section>
+  <div class="testimonial-1 py-4 md:py-12">
+    <div class="container mx-auto px-4">
+        <div class="md:flex md:flex-wrap md:-mx-4 mb-4">
+  
+            <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
+                <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                        <img src="src\lib\images\Charlotte.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-gray-600">"We must all do our best to improve visibility of VSS in Higher education and the workplace.
+                          We generated more than 500 interactions and led 126 ESSEC members to bring forth their recommendations."</p>
+                        <div class="text-gray-900 font-bold uppercase mt-6">- Charlotte C.</div>
+                        <div class="text-gray-600">President of Les Méduses</div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
+                <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                        <img src="src\lib\images\Louise.jpg" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-gray-600">"We are commited to make a change! Thanks guys, keep up the good work! Every form of fight is essential to change the situation, get involved where you feel most comfortable!"</p>
+                        <div class="text-gray-900 font-bold uppercase mt-6">- Louise O.</div>
+                        <div class="text-gray-600">Team Member</div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="md:w-1/2 md:px-4 mt-6">
+                <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                        <img src="src\lib\images\Tiphaine.jfif" alt="Tiphaine H." class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better."</p>
+                        <div class="text-gray-900 font-bold uppercase mt-6">- Tiphaine E.</div>
+                        <div class="text-gray-600">Team Member, IT manager</div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="md:w-1/2 md:px-4 mt-6">
+              <div class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
+                      <img src="src\lib\images\Alice.jfif" alt="" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                      <p class="text-gray-600">"There are many forms of commitment against gender-based violence.
+                        We naturally think of marches, collages and so-called "field" actions. But the fight against gender-based violence is also a fight of ideas."</p>
+                      <div class="text-gray-900 font-bold uppercase mt-6">- Alice G.</div>
+                      <div class="text-gray-600">Team Member</div>
+                  </div>
+              </div>
+          
+  
+          </div>
+  
+        </div>
+    </div>
+  </div>
+  </section>
+
+
+
 
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
