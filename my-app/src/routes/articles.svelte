@@ -7,7 +7,7 @@
   <div class="py-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
-          <h1 class="font-sans sm:text-3xl text-2xl font-bold title-font mb-4">Our article</h1>
+          <h1 class="font-sans sm:text-3xl text-2xl font-bold title-font mb-4">Our articles</h1>
           <p>Learn more about our work</p>
         </div>
       </div>
@@ -18,7 +18,7 @@
     <div class="container px-5 py-5 mx-auto">
       <div class="flex flex-wrap -m-4">
         <div class="p-4 lg:w-1/3">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8  pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
+          <div class="h-full bg-gray-200 bg-opacity-75 px-8  pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Campaign #1</h2>
             <h1 class="title-font sm:text-2xl text-xl font-medium mb-3">The gendered perception of the naked body</h1>
             <p class="leading-relaxed mb-3">Today, les Méduses present you their first campaign about the gendered perception of the naked body. Why did Corinne Masiero's performance shock so much? Why did we ignore the message she was trying to convey and comment on her physique instead?</p>
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="p-4 lg:w-1/3">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
+          <div class="h-full bg-gray-200 bg-opacity-75 px-8 pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Working group #1</h2>
             <h1 class="title-font sm:text-2xl text-xl font-medium mb-3">Training of students</h1>
             <p class="leading-relaxed mb-3">Today, we would like to present one of our working groups, composed of a dozen students and alumni: student training.</p>
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="p-4 lg:w-1/3">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
+          <div class="h-full bg-gray-200 bg-opacity-75 px-8 pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Working group #2</h2>
             <h1 class="title-font sm:text-2xl text-xl font-medium  mb-3">Support structures for victims of SSV (sexist and sexual violence)</h1>
             <p class="leading-relaxed mb-3"> Today, we would like to present one of our working groups, composed of students and alumni: support structures for victims of SSV (sexist and sexual violence).</p>
