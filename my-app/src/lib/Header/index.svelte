@@ -12,13 +12,13 @@
 		<img src="https://zupimages.net/up/21/22/8o3k.png" alt="Les Méduses" class="max-h-9 max-w-9" />
 		<span class="ml-3 text-xl">Les Méduses</span>
 	</p>
-	  <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+	  <nav class="md:ml-auto text-xs flex flex-wrap items-center lg:text-base justify-center">
 		<a sveltekit:prefetch href="/" class="font-sans mr-5 ">Homepage</a>
 		<a sveltekit:prefetch href="/donation" class="font-sans mr-5 ">Donations</a>
 		<a sveltekit:prefetch href="/team" class="font-sans mr-5  font-sans">Team</a>
 		<a sveltekit:prefetch href="/articles" class="font-sans mr-5  font-sans">Articles</a>
 	  </nav>
-	  <button class="font-sans inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full text-base mt-4 md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans">Contact</a></button>
+	  <button class="font-sans text-xs inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full lg:text-base mt-4 md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans">Contact</a></button>
 </div>
 </header>
 
