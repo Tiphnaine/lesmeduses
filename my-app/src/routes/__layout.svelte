@@ -24,10 +24,10 @@
 					<a href="https://www.facebook.com/collectiflesmeduses/" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-colors duration-300">
 						<i class="fab fa-facebook"></i>
 					</a>
-					<a href="https://www.instagram.com/_les_meduses/" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400 transition-colors duration-300">
+					<a href="https://www.instagram.com/_les_meduses/" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600 transition-colors duration-300">
 						<i class="fab fa-instagram"></i>
 					</a>
-					<a href="https://fr.linkedin.com/company/les-m%C3%A9duses" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600 transition-colors duration-300">
+					<a href="https://fr.linkedin.com/company/les-m%C3%A9duses" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400  transition-colors duration-300">
 						<i class="fab fa-linkedin-in"></i>
 					</a>
 				</div>
