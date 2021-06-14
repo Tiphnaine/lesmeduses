@@ -15,9 +15,9 @@
     <div class="container mx-auto px-4">
         <div class="md:flex md:flex-wrap md:-mx-4 mb-4">
             <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
-                <div class="testimonial p-6 border-2 border-solid flex hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
+                <div class="testimonial p-6 border-2 border-solid flex rounded-lg hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
                     <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                        <img src="src\lib\images\Charlotte.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
+                        <img src="https://nsa40.casimages.com/img/2021/06/14/mini_210614070619124466.jpg" alt="Charlotte Caillat" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="text-gray-600">"We must all do our best to improve visibility of VSS in Higher education and the workplace.
@@ -29,9 +29,9 @@
             </div>
   
             <div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
-                <div class="testimonial p-6 border-2 border-solid flex hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
+                <div class="testimonial p-6 border-2 border-solid flex rounded-lg hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
                     <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                        <img src="src\lib\images\Louise.jpg" alt="" class="w-full h-full object-cover">
+                        <img src="https://nsa40.casimages.com/img/2021/06/14/mini_210614070619518708.jpg" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="text-gray-600">"We are commited to make a change! Thanks guys, keep up the good work! Every form of fight is essential to change the situation, get involved where you feel most comfortable!"</p>
@@ -42,9 +42,9 @@
             </div>
   
             <div class="md:w-1/2 md:px-4 mt-6">
-                <div class="testimonial p-6 border-2 border-solid flex hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
+                <div class="testimonial p-6 border-2 border-solid flex rounded-lg hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
                     <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                        <img src="src\lib\images\Tiphaine.jfif" alt="Tiphaine H." class="w-full h-full object-cover">
+                        <img src="https://nsa40.casimages.com/img/2021/06/14/mini_210614070619768887.jpg" alt="Tiphaine H." class="w-full h-full object-cover">
                     </div>
                     <div>
                         <p class="text-gray-600">"Finally an activist collective against gender-based violence at ESSEC ! We are convinced that thanks to our actions, things can get better and better."</p>
@@ -55,9 +55,9 @@
             </div>
   
             <div class="md:w-1/2 md:px-4 mt-6">
-              <div class="testimonial p-6 border-2 border-solid flex hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
+              <div class="testimonial p-6 border-2 border-solid flex rounded-lg hover:border-gray-600 hover:bg-gray-200 transition-colors duration-300">
                   <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0">
-                      <img src="src\lib\images\Alice.jfif" alt="" class="w-full h-full object-cover">
+                      <img src="https://nsa40.casimages.com/img/2021/06/14/mini_210614070619267907.jpg" alt="" class="w-full h-full object-cover">
                   </div>
                   <div>
                       <p class="text-gray-600">"There are many forms of commitment against gender-based violence.
