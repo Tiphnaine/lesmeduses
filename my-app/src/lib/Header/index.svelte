@@ -18,8 +18,7 @@
 		<a sveltekit:prefetch href="/team" class="font-sans mr-5  font-sans">Team</a>
 		<a sveltekit:prefetch href="/articles" class="font-sans mr-5  font-sans">Articles</a>
 	  </nav>
-	  <button class="font-sans text-xs inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full lg:text-base mt-4 flex md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans">Contact</a></button>
-	  <!-- <button type="submit" class="font-sans bg-gray-200 inline-flex items-center  border-0 py-3 px-7 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0 flex mx-auto">Send</button> -->
+	  <button class="font-sans transition duration-300 text-xs inline-flex items-center bg-white border-0 py-3 px-7 focus:outline-none hover:bg-gray-400 rounded-full lg:text-base mt-4 flex md:mt-0"><a sveltekit:prefetch href="/contact" class="font-sans">Contact</a></button>
 
 	</div>
 </header>
