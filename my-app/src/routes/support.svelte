@@ -33,8 +33,8 @@
   
   <body>
     <section class="mx-auto max-w-2xl">
-      <h2 class="text-4xl text-center tracking-wide font-extrabold font-serif leading-loose mb-2">Support structures for victims of SSV (sexist and sexual violence)</h2>
-      <p class="text-xl text-center tracking-wide font-serif leading-loose mb-2">Today, we would like to present one of our working groups, composed of a dozen students and alumni: student training.</p>
+      <h1 class="text-xl text-center tracking-wide font-bold  leading-loose mb-2">Support structures for victims of SSV (sexist and sexual violence)</h1>
+      <p class="text-center tracking-wide leading-loose mb-2">Today, we would like to present one of our working groups, composed of a dozen students and alumni: student training.</p>
       <div class="shadow-2xl relative">
         <!-- large image on slides -->
         <div class="mySlides hidden">
@@ -122,3 +122,50 @@
       }
     </script>
   </body>
+  <style>
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+    p {
+      width: 100%;
+      --tw-text-opacity: 1;
+      color: rgba(75, 85, 99, var(--tw-text-opacity));
+      font-family: Arial, Helvetica, sans-serif;
+      /* text-align:center; */
+    }
+  
+    h1 {
+      width: 100%;
+      color : #552B4D;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    h2 {
+      width: 100%;
+      color : #B366A4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    a {
+      color: var(--heading-color);
+      text-decoration: none;
+      transition: color 0.2s linear;
+    }
+  
+    a:hover {
+      color: #B366A4;
+    }
+    /* .welcome {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    } */
+  
+    .testimonial {
+    border-radius: 1rem;
+  }
+  </style>

@@ -20,7 +20,7 @@
         <div class="p-4 lg:w-1/3">
           <div class="h-full bg-gray-100 bg-opacity-75 px-8  pb-10 pt-5 rounded-lg overflow-hidden text-center relative">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Campaign #1</h2>
-            <h1 class="title-font sm:text-2xl text-xl font-medium  mb-3">The gendered perception of the naked body</h1>
+            <h1 class="title-font sm:text-2xl text-xl font-medium mb-3">The gendered perception of the naked body</h1>
             <p class="leading-relaxed mb-3">Today, les Méduses present you their first campaign about the gendered perception of the naked body. Why did Corinne Masiero's performance shock so much? Why did we ignore the message she was trying to convey and comment on her physique instead?</p>
             <a href="/naked" class=" inline-flex items-center">Learn More
               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
